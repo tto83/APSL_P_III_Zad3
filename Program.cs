@@ -7,6 +7,7 @@ namespace APSL_P_III_Zad3
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            //works?
         }
     }
 }
