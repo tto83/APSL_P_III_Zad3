@@ -1,0 +1,27 @@
+public delegate void ciag (int n, int a, int p);
+
+main:
+
+- funkcja dla ciągu arytmetycznego:
+
+void ar(int liczba, int start, int r)
+{
+  Console.WriteLine(start);
+  int x=start+r;
+  for (i=1;i<=liczba-1;i++)
+  { Console.WriteLine(x);x=x+r;}
+}
+
+wywołanie np.
+ ciag nowy =new ciag(ar);
+
+ nowy (ile, od,co_ile);
+//ile jest losowane zgodnie z warunkami zadania, a od i co_ile określa uzytkownik
+
+inne możliwe wywołanie:
+
+ciag nowy;
+nowy=ar;
+nowy=nowy+geo //geo nazwa funkcji dla ciągu geometrycznego
+
+Jeżeli użytkownik chce ciąg geometryczny to wywołujemy od razu nowy z parametrami, a jak arytmetyczny to: nowy=nowy-geo i dopiero wywołujemy nowy z parametrami
